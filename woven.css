@@ -1,0 +1,80 @@
+
+h1 {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: #eeeeee;
+  padding: 10px;
+}
+@media only screen and (max-width: 599px) {
+  .wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-flow: column-wrap;
+    flex-flow: column wrap;
+  }
+}
+.color-forms {
+  width: 200px;
+  padding-bottom: 20px;
+}
+.warp-choice,
+.weft-choice,
+.btn {
+  margin-bottom: 10px;
+  font-family: Arial;
+  color: #666666;
+}
+.btn-big {
+  background: yellow;
+  color: #666666;
+  height: 40px;
+  border-radius: 5px;
+}
+/*.swatch makes the warp color repeat 4 times */
+.room-for-two {
+  display: flex;
+  flex-flow: row nowrap;
+  -webkit-flex-flow: row nowrap;
+  justify-content: center;
+  background: #eeeeee;
+  padding: 30px 0 30px 0;
+}
+.color-repeat {
+  display: grid;
+  grid-gap: none;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+/*.repeat is one repeat in the warp */
+.twill-repeat {
+  display: grid;
+  grid-template-columns: repeat(12, 20px);
+  grid-gap: 0px;
+}
+.warp-choice-one,
+.warp-choice-two,
+.warp-choice-three,
+.first-color,
+.second-color,
+.third-color,
+.fourth-color,
+.fifth-color,
+.sixth-color {
+  width: 20px;
+  height: 20px;
+}
+
