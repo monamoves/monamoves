@@ -7,12 +7,12 @@ $(document).ready(function() {
     }
   }
   multiplyRepeat(document.querySelector(".color-repeat"), 2, true);
-// Input warp colors
+  // Input warp colors
   function setWarp(event) {
     event.preventDefault();
     var allWarpEnds = document.querySelectorAll(
-      ".warp-choice-one, .warp-choice-two, .warp-choice-three"
-    );
+          ".warp-choice-one, .warp-choice-two, .warp-choice-three"
+        );
     var firstColor = $("#first-color").val();
     console.log(firstColor);
     var secondColor = $("#second-color").val();
@@ -22,24 +22,23 @@ $(document).ready(function() {
     var i;
     for (i = 0; i < allWarpEnds.length; i++) {
       document.querySelectorAll(".warp-choice-one")[
-        i
-      ].style.background = firstColor;
+              i
+            ].style.background = firstColor;
       document.querySelectorAll(".warp-choice-two")[
-        i
-      ].style.background = secondColor;
+              i
+            ].style.background = secondColor;
       document.querySelectorAll(".warp-choice-three")[
-        i
-      ].style.background = thirdColor;
+              i
+            ].style.background = thirdColor;
     }
   }
-
   $("#choose-warp-colors").on("submit", setWarp);
-// Input for weft colors, weaves sample
+  // Input for weft colors, weaves sample
   function setWeft(event) {
     event.preventDefault();
     var allWarpEnds = document.querySelectorAll(
-      ".warp-choice-one, .warp-choice-two, .warp-choice-three"
-    );
+          ".warp-choice-one, .warp-choice-two, .warp-choice-three"
+        );
     var firstColor = $("#first-color").val();
     var secondColor = $("#second-color").val();
     var thirdColor = $("#third-color").val();
@@ -52,43 +51,41 @@ $(document).ready(function() {
     var i;
     for (i = 0; i < allWarpEnds.length; i++) {
       document.querySelectorAll(".one, .ten, .seventeen")[
-        i
-      ].style.background = firstColor;
+              i
+            ].style.background = firstColor;
       document.querySelectorAll(".two, .three, .five")[
-        i
-      ].style.background = fourthColor;
+              i
+            ].style.background = fourthColor;
       document.querySelectorAll(".four, .twelve, .fourteen")[
-        i
-      ].style.background = secondColor;
+              i
+            ].style.background = secondColor;
       document.querySelectorAll(".six, .nine, .fifteen")[
-        i
-      ].style.background = thirdColor;
+              i
+            ].style.background = thirdColor;
       document.querySelectorAll(".seven, .eight, .eleven")[
-        i
-      ].style.background = fifthColor;
+              i
+            ].style.background = fifthColor;
       document.querySelectorAll(".thirteen, .sixteen, .eighteen")[
-        i
-      ].style.background = sixthColor;
+              i
+            ].style.background = sixthColor;
     }
   }
-
   $("#choose-weft-colors").on("submit", setWeft);
   console.log($("#check").css("background"));
-  
-// Clears sample
+  // Clears sample
   function resetWeave(event) {
     event.preventDefault();
     var allWarpEnds = document.querySelectorAll(
-      ".warp-choice-one, .warp-choice-two, .warp-choice-three"
-    );
+          ".warp-choice-one, .warp-choice-two, .warp-choice-three"
+        );
     var i;
     for (i = 0; i < allWarpEnds.length; i++) {
       document.querySelectorAll(
-        ".warp-choice-one, .warp-choice-two, .warp-choice-three"
-      )[i].style.backgroundColor =
-        "transparent";
+              ".warp-choice-one, .warp-choice-two, .warp-choice-three"
+            )[i].style.backgroundColor =
+              "transparent";
     }
   }
-     $("#reset-weave").click("reset", resetWeave);  
-});
-  
+  $("#reset-weave").click("reset", resetWeave);
+}
+);

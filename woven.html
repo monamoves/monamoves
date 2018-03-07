@@ -1,218 +1,401 @@
 <!DOCTYPE html5>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="keyword" content="Junior Web Developer, Mona Le Roy">
-  <title>Mona Le Roy: Woven Project</title>
-  <meta name="description" content="This is Mona Le Roy's official website.">
-  <meta name="author" content="Mona Le Roy">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="woven.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="woven.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keyword" content="Junior Web Developer, Mona Le Roy">
+<title>Mona Le Roy: Woven Project</title>
+<meta name="description" content="This is Mona Le Roy's official website.">
+<meta name="author" content="Mona Le Roy">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="woven.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="woven.js"></script>
 </head>
 <body>
-  <h1>Welcome to Weaving</h1>
-  <div class="wrapper">
+<div class="instructions">
+  <h1>Welcome to Color Weaving</h1>
+  <p>
+    Try out colors in a twill woven pattern. First choose warp colors, as many as three. Then choose weft colors. Your colors will be "woven" when you press "New Weft Colors".
+  </p>
+</div>
+<div class="wrapper">
   <div class="color-forms">
     <form id="choose-warp-colors" action="">
-      <div class="warp-choice"><label>warp color #1</label>
-        <input type="text" value="" id="first-color"></div>
-      <div class="warp-choice"><label>warp color #2</label>
-        <input type="text" value="" id="second-color"> </div>
-      <div class="warp-choice"><label>warp color #3</label>
-        <input type="text" value="" id="third-color"> </div>
-      <div class="warp-choice"><input type="submit" class="btn" value="Choose Warp Colors">
+      <div class="warp-choice">
+        <label>warp color #1</label>
+        <input type="text" value="" id="first-color">
       </div>
-      <div><input type="reset" class="btn" value="New Warp Colors"></div>
+      <div class="warp-choice">
+        <label>warp color #2</label>
+        <input type="text" value="" id="second-color">
+      </div>
+      <div class="warp-choice">
+        <label>warp color #3</label>
+        <input type="text" value="" id="third-color">
+      </div>
+      <div class="warp-choice">
+        <input type="submit" class="btn" value="Choose Warp Colors">
+      </div>
+      <div>
+        <input type="reset" class="btn" value="New Warp Colors">
+      </div>
     </form>
   </div>
   <div class="color-forms">
     <form id="choose-weft-colors" action="">
-      <div class="weft-choice"><label>weft color #1</label>
-        <input type="text" value="" id="fourth-color"> </div>
-      <div class="weft-choice"><label>weft color #2</label>
-        <input type="text" value="" id="fifth-color"> </div>
-      <div class="weft-choice"><label>weft color #3</label>
-        <input type="text" value="" id="sixth-color"> </div>
-      <div class="weft-choice"><input type="submit" class="btn" value="Choose Weft Colors">
+      <div class="weft-choice">
+        <label>weft color #1</label>
+        <input type="text" value="" id="fourth-color">
       </div>
-      <div><input type="reset" class="btn" value="New Weft Colors"></div>
+      <div class="weft-choice">
+        <label>weft color #2</label>
+        <input type="text" value="" id="fifth-color">
+      </div>
+      <div class="weft-choice">
+        <label>weft color #3</label>
+        <input type="text" value="" id="sixth-color">
+      </div>
+      <div class="weft-choice">
+        <input type="submit" class="btn" value="Choose Weft Colors">
+      </div>
+      <div>
+        <input type="reset" class="btn" value="New Weft Colors">
+      </div>
     </form>
   </div>
-  <div><button class="btn-big" id="reset-weave">Clear Weave</button></div>
+  <div>
+    <button class="btn-big" id="reset-weave">Clear Weave</button>
+  </div>
+</div>
+<div class="wrapper btn">
+  <p class="btn">
+    See your "weave" below.
+  </p>
 </div>
 <div class="room-for-two">
   <div class="color-repeat">
     <div class="twill-repeat">
-      <div class="warp-choice-one one fourth-color"></div>
-      <div class="warp-choice-two two fourth-color"></div>
-      <div class="warp-choice-three three fourth-color"></div>
-      <div class="warp-choice-one one fourth-color"></div>
-      <div class="warp-choice-two four fourth-color"></div>
-      <div class="warp-choice-three three fourth-color"></div>
-      <div class="warp-choice-one five fourth-color"></div>
-      <div class="warp-choice-two four fourth-color"></div>
-      <div class="warp-choice-three six fourth-color"></div>
-      <div class="warp-choice-one five fourth-color"></div>
-      <div class="warp-choice-two two fourth-color"></div>
-      <div class="warp-choice-three six fourth-color"></div>
+      <div class="warp-choice-one one fourth-color">
+      </div>
+      <div class="warp-choice-two two fourth-color">
+      </div>
+      <div class="warp-choice-three three fourth-color">
+      </div>
+      <div class="warp-choice-one one fourth-color">
+      </div>
+      <div class="warp-choice-two four fourth-color">
+      </div>
+      <div class="warp-choice-three three fourth-color">
+      </div>
+      <div class="warp-choice-one five fourth-color">
+      </div>
+      <div class="warp-choice-two four fourth-color">
+      </div>
+      <div class="warp-choice-three six fourth-color">
+      </div>
+      <div class="warp-choice-one five fourth-color">
+      </div>
+      <div class="warp-choice-two two fourth-color">
+      </div>
+      <div class="warp-choice-three six fourth-color">
+      </div>
     </div>
     <div class="twill-repeat">
-      <div class="warp-choice-one seven fifth-color"></div>
-      <div class="warp-choice-two eight fifth-color"></div>
-      <div class="warp-choice-three nine fifth-color"></div>
-      <div class="warp-choice-one ten fifth-color"></div>
-      <div class="warp-choice-two eight fifth-color"></div>
-      <div class="warp-choice-three eleven fifth-color"></div>
-      <div class="warp-choice-one ten fifth-color"></div>
-      <div class="warp-choice-two twelve fifth-color"></div>
-      <div class="warp-choice-three eleven fifth-color"></div>
-      <div class="warp-choice-one seven fifth-color"></div>
-      <div class="warp-choice-two twelve fifth-color"></div>
-      <div class="warp-choice-three nine fifth-color"></div>
+      <div class="warp-choice-one seven fifth-color">
+      </div>
+      <div class="warp-choice-two eight fifth-color">
+      </div>
+      <div class="warp-choice-three nine fifth-color">
+      </div>
+      <div class="warp-choice-one ten fifth-color">
+      </div>
+      <div class="warp-choice-two eight fifth-color">
+      </div>
+      <div class="warp-choice-three eleven fifth-color">
+      </div>
+      <div class="warp-choice-one ten fifth-color">
+      </div>
+      <div class="warp-choice-two twelve fifth-color">
+      </div>
+      <div class="warp-choice-three eleven fifth-color">
+      </div>
+      <div class="warp-choice-one seven fifth-color">
+      </div>
+      <div class="warp-choice-two twelve fifth-color">
+      </div>
+      <div class="warp-choice-three nine fifth-color">
+      </div>
     </div>
     <div class="twill-repeat">
-      <div class="warp-choice-one thirteen sixth-color"></div>
-      <div class="warp-choice-two fourteen sixth-color"></div>
-      <div class="warp-choice-three fifteen sixth-color"></div>
-      <div class="warp-choice-one thirteen sixth-color"></div>
-      <div class="warp-choice-two sixteen sixth-color"></div>
-      <div class="warp-choice-three fifteen sixth-color"></div>
-      <div class="warp-choice-one seventeen sixth-color"></div>
-      <div class="warp-choice-two sixteen sixth-color"></div>
-      <div class="warp-choice-three eighteen sixth-color"></div>
-      <div class="warp-choice-one seventeen sixth-color"></div>
-      <div class="warp-choice-two fourteen sixth-color"></div>
-      <div class="warp-choice-three eighteen sixth-color" id="check"></div>
+      <div class="warp-choice-one thirteen sixth-color">
+      </div>
+      <div class="warp-choice-two fourteen sixth-color">
+      </div>
+      <div class="warp-choice-three fifteen sixth-color">
+      </div>
+      <div class="warp-choice-one thirteen sixth-color">
+      </div>
+      <div class="warp-choice-two sixteen sixth-color">
+      </div>
+      <div class="warp-choice-three fifteen sixth-color">
+      </div>
+      <div class="warp-choice-one seventeen sixth-color">
+      </div>
+      <div class="warp-choice-two sixteen sixth-color">
+      </div>
+      <div class="warp-choice-three eighteen sixth-color">
+      </div>
+      <div class="warp-choice-one seventeen sixth-color">
+      </div>
+      <div class="warp-choice-two fourteen sixth-color">
+      </div>
+      <div class="warp-choice-three eighteen sixth-color" id="check">
+      </div>
     </div>
     <div class="twill-repeat">
-      <div class="warp-choice-one one"></div>
-      <div class="warp-choice-two four"></div>
-      <div class="warp-choice-three three"></div>
-      <div class="warp-choice-one five"></div>
-      <div class="warp-choice-two four"></div>
-      <div class="warp-choice-three six"></div>
-      <div class="warp-choice-one five"></div>
-      <div class="warp-choice-two two"></div>
-      <div class="warp-choice-three six"></div>
-      <div class="warp-choice-one one"></div>
-      <div class="warp-choice-two two"></div>
-      <div class="warp-choice-three three"></div>
+      <div class="warp-choice-one one">
+      </div>
+      <div class="warp-choice-two four">
+      </div>
+      <div class="warp-choice-three three">
+      </div>
+      <div class="warp-choice-one five">
+      </div>
+      <div class="warp-choice-two four">
+      </div>
+      <div class="warp-choice-three six">
+      </div>
+      <div class="warp-choice-one five">
+      </div>
+      <div class="warp-choice-two two">
+      </div>
+      <div class="warp-choice-three six">
+      </div>
+      <div class="warp-choice-one one">
+      </div>
+      <div class="warp-choice-two two">
+      </div>
+      <div class="warp-choice-three three">
+      </div>
     </div>
     <div class="twill-repeat">
-      <div class="warp-choice-one ten"></div>
-      <div class="warp-choice-two eight"></div>
-      <div class="warp-choice-three eleven"></div>
-      <div class="warp-choice-one ten"></div>
-      <div class="warp-choice-two twelve"></div>
-      <div class="warp-choice-three eleven"></div>
-      <div class="warp-choice-one seven"></div>
-      <div class="warp-choice-two twelve"></div>
-      <div class="warp-choice-three nine"></div>
-      <div class="warp-choice-one seven"></div>
-      <div class="warp-choice-two eight"></div>
-      <div class="warp-choice-three nine"></div>
+      <div class="warp-choice-one ten">
+      </div>
+      <div class="warp-choice-two eight">
+      </div>
+      <div class="warp-choice-three eleven">
+      </div>
+      <div class="warp-choice-one ten">
+      </div>
+      <div class="warp-choice-two twelve">
+      </div>
+      <div class="warp-choice-three eleven">
+      </div>
+      <div class="warp-choice-one seven">
+      </div>
+      <div class="warp-choice-two twelve">
+      </div>
+      <div class="warp-choice-three nine">
+      </div>
+      <div class="warp-choice-one seven">
+      </div>
+      <div class="warp-choice-two eight">
+      </div>
+      <div class="warp-choice-three nine">
+      </div>
     </div>
     <div class="twill-repeat">
-      <div class="warp-choice-one thirteen"></div>
-      <div class="warp-choice-two sixteen"></div>
-      <div class="warp-choice-three fifteen"></div>
-      <div class="warp-choice-one seventeen"></div>
-      <div class="warp-choice-two sixteen"></div>
-      <div class="warp-choice-three eighteen"></div>
-      <div class="warp-choice-one seventeen"></div>
-      <div class="warp-choice-two fourteen"></div>
-      <div class="warp-choice-three eighteen"></div>
-      <div class="warp-choice-one thirteen"></div>
-      <div class="warp-choice-two fourteen"></div>
-      <div class="warp-choice-three fifteen"></div>
+      <div class="warp-choice-one thirteen">
+      </div>
+      <div class="warp-choice-two sixteen">
+      </div>
+      <div class="warp-choice-three fifteen">
+      </div>
+      <div class="warp-choice-one seventeen">
+      </div>
+      <div class="warp-choice-two sixteen">
+      </div>
+      <div class="warp-choice-three eighteen">
+      </div>
+      <div class="warp-choice-one seventeen">
+      </div>
+      <div class="warp-choice-two fourteen">
+      </div>
+      <div class="warp-choice-three eighteen">
+      </div>
+      <div class="warp-choice-one thirteen">
+      </div>
+      <div class="warp-choice-two fourteen">
+      </div>
+      <div class="warp-choice-three fifteen">
+      </div>
     </div>
     <div class="twill-repeat">
-      <div class="warp-choice-one five"></div>
-      <div class="warp-choice-two four"></div>
-      <div class="warp-choice-three six"></div>
-      <div class="warp-choice-one five"></div>
-      <div class="warp-choice-two two"></div>
-      <div class="warp-choice-three six"></div>
-      <div class="warp-choice-one one"></div>
-      <div class="warp-choice-two two"></div>
-      <div class="warp-choice-three three"></div>
-      <div class="warp-choice-one one"></div>
-      <div class="warp-choice-two four"></div>
-      <div class="warp-choice-three three"></div>
+      <div class="warp-choice-one five">
+      </div>
+      <div class="warp-choice-two four">
+      </div>
+      <div class="warp-choice-three six">
+      </div>
+      <div class="warp-choice-one five">
+      </div>
+      <div class="warp-choice-two two">
+      </div>
+      <div class="warp-choice-three six">
+      </div>
+      <div class="warp-choice-one one">
+      </div>
+      <div class="warp-choice-two two">
+      </div>
+      <div class="warp-choice-three three">
+      </div>
+      <div class="warp-choice-one one">
+      </div>
+      <div class="warp-choice-two four">
+      </div>
+      <div class="warp-choice-three three">
+      </div>
     </div>
     <div class="twill-repeat">
-      <div class="warp-choice-one ten"></div>
-      <div class="warp-choice-two twelve"></div>
-      <div class="warp-choice-three eleven"></div>
-      <div class="warp-choice-one seven"></div>
-      <div class="warp-choice-two twelve"></div>
-      <div class="warp-choice-three nine"></div>
-      <div class="warp-choice-one seven"></div>
-      <div class="warp-choice-two eight"></div>
-      <div class="warp-choice-three nine"></div>
-      <div class="warp-choice-one ten"></div>
-      <div class="warp-choice-two eight"></div>
-      <div class="warp-choice-three eleven"></div>
+      <div class="warp-choice-one ten">
+      </div>
+      <div class="warp-choice-two twelve">
+      </div>
+      <div class="warp-choice-three eleven">
+      </div>
+      <div class="warp-choice-one seven">
+      </div>
+      <div class="warp-choice-two twelve">
+      </div>
+      <div class="warp-choice-three nine">
+      </div>
+      <div class="warp-choice-one seven">
+      </div>
+      <div class="warp-choice-two eight">
+      </div>
+      <div class="warp-choice-three nine">
+      </div>
+      <div class="warp-choice-one ten">
+      </div>
+      <div class="warp-choice-two eight">
+      </div>
+      <div class="warp-choice-three eleven">
+      </div>
     </div>
     <div class="twill-repeat">
-      <div class="warp-choice-one seventeen"></div>
-      <div class="warp-choice-two sixteen"></div>
-      <div class="warp-choice-three eighteen"></div>
-      <div class="warp-choice-one seventeen"></div>
-      <div class="warp-choice-two fourteen"></div>
-      <div class="warp-choice-three eighteen"></div>
-      <div class="warp-choice-one thirteen"></div>
-      <div class="warp-choice-two fourteen"></div>
-      <div class="warp-choice-three fifteen"></div>
-      <div class="warp-choice-one thirteen"></div>
-      <div class="warp-choice-two sixteen"></div>
-      <div class="warp-choice-three fifteen"></div>
+      <div class="warp-choice-one seventeen">
+      </div>
+      <div class="warp-choice-two sixteen">
+      </div>
+      <div class="warp-choice-three eighteen">
+      </div>
+      <div class="warp-choice-one seventeen">
+      </div>
+      <div class="warp-choice-two fourteen">
+      </div>
+      <div class="warp-choice-three eighteen">
+      </div>
+      <div class="warp-choice-one thirteen">
+      </div>
+      <div class="warp-choice-two fourteen">
+      </div>
+      <div class="warp-choice-three fifteen">
+      </div>
+      <div class="warp-choice-one thirteen">
+      </div>
+      <div class="warp-choice-two sixteen">
+      </div>
+      <div class="warp-choice-three fifteen">
+      </div>
     </div>
     <div class="twill-repeat">
-      <div class="warp-choice-one five"></div>
-      <div class="warp-choice-two two"></div>
-      <div class="warp-choice-three six"></div>
-      <div class="warp-choice-one one"></div>
-      <div class="warp-choice-two two"></div>
-      <div class="warp-choice-three three"></div>
-      <div class="warp-choice-one one"></div>
-      <div class="warp-choice-two four"></div>
-      <div class="warp-choice-three three"></div>
-      <div class="warp-choice-one five"></div>
-      <div class="warp-choice-two four"></div>
-      <div class="warp-choice-three six"></div>
+      <div class="warp-choice-one five">
+      </div>
+      <div class="warp-choice-two two">
+      </div>
+      <div class="warp-choice-three six">
+      </div>
+      <div class="warp-choice-one one">
+      </div>
+      <div class="warp-choice-two two">
+      </div>
+      <div class="warp-choice-three three">
+      </div>
+      <div class="warp-choice-one one">
+      </div>
+      <div class="warp-choice-two four">
+      </div>
+      <div class="warp-choice-three three">
+      </div>
+      <div class="warp-choice-one five">
+      </div>
+      <div class="warp-choice-two four">
+      </div>
+      <div class="warp-choice-three six">
+      </div>
     </div>
     <div class="twill-repeat">
-      <div class="warp-choice-one seven"></div>
-      <div class="warp-choice-two twelve"></div>
-      <div class="warp-choice-three nine"></div>
-      <div class="warp-choice-one seven"></div>
-      <div class="warp-choice-two eight"></div>
-      <div class="warp-choice-three nine"></div>
-      <div class="warp-choice-one ten"></div>
-      <div class="warp-choice-two eight"></div>
-      <div class="warp-choice-three eleven"></div>
-      <div class="warp-choice-one ten"></div>
-      <div class="warp-choice-two twelve"></div>
-      <div class="warp-choice-three eleven"></div>
+      <div class="warp-choice-one seven">
+      </div>
+      <div class="warp-choice-two twelve">
+      </div>
+      <div class="warp-choice-three nine">
+      </div>
+      <div class="warp-choice-one seven">
+      </div>
+      <div class="warp-choice-two eight">
+      </div>
+      <div class="warp-choice-three nine">
+      </div>
+      <div class="warp-choice-one ten">
+      </div>
+      <div class="warp-choice-two eight">
+      </div>
+      <div class="warp-choice-three eleven">
+      </div>
+      <div class="warp-choice-one ten">
+      </div>
+      <div class="warp-choice-two twelve">
+      </div>
+      <div class="warp-choice-three eleven">
+      </div>
     </div>
     <div class="twill-repeat">
-      <div class="warp-choice-one seventeen"></div>
-      <div class="warp-choice-two fourteen"></div>
-      <div class="warp-choice-three eighteen"></div>
-      <div class="warp-choice-one thirteen"></div>
-      <div class="warp-choice-two fourteen"></div>
-      <div class="warp-choice-three fifteen"></div>
-      <div class="warp-choice-one thirteen"></div>
-      <div class="warp-choice-two sixteen"></div>
-      <div class="warp-choice-three fifteen"></div>
-      <div class="warp-choice-one seventeen"></div>
-      <div class="warp-choice-two sixteen"></div>
-      <div class="warp-choice-three eighteen"></div>
+      <div class="warp-choice-one seventeen">
+      </div>
+      <div class="warp-choice-two fourteen">
+      </div>
+      <div class="warp-choice-three eighteen">
+      </div>
+      <div class="warp-choice-one thirteen">
+      </div>
+      <div class="warp-choice-two fourteen">
+      </div>
+      <div class="warp-choice-three fifteen">
+      </div>
+      <div class="warp-choice-one thirteen">
+      </div>
+      <div class="warp-choice-two sixteen">
+      </div>
+      <div class="warp-choice-three fifteen">
+      </div>
+      <div class="warp-choice-one seventeen">
+      </div>
+      <div class="warp-choice-two sixteen">
+      </div>
+      <div class="warp-choice-three eighteen">
+      </div>
     </div>
   </div>
 </div>
-</body>
+<footer>
+<p>
+  This is a work in progress. I plan to expand the number of colors that can be used, add more woven patterns, and style the look of the "fibers". You can see some of my progress <a href="https://codepen.io/monamoves/" target="_blank">here</a>.
+</p>
+<ul>
+  <li><a href="https://github.com/monamoves">github</a></li>
+  <li><a href="index.html">monamoves.com</a></li>
+  <li><a href="mailto:monamoves@gmail.com">monamoves@gmail.com</a></li>
+  </footer>
+  </body>
