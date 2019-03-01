@@ -1,0 +1,783 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, a, img, b, u, center,
+ span, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+output, ruby, section, summary, menu,
+time, mark, audio, video
+  {
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+article, aside {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1.5;
+  width: 97%;
+}
+ol, ul {
+  list-style: none;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+.row {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* banner */
+
+header.topsmall{
+
+}
+
+header.topmedium{
+  display: none;
+}
+
+div.med {
+  display: none;
+}
+
+header.toplarge {
+  display: none;
+}
+
+div.large {
+  display: none;
+}
+
+img.logo {
+  width: 100%;
+  height: auto;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+img.medium {
+  display: none;
+}
+
+img.medium1 {
+  display: none;
+}
+
+img.medium2 {
+  display: none;
+}
+
+img.large {
+  display: none;
+}
+
+img.large1 {
+  display: none;
+}
+
+img.large2 {
+  display: none;
+}
+
+div.smedia {
+  position: absolute;
+  width: 25%;
+  top: 3%;
+  left: 70%;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+div.fb-share-button {
+  padding: 2%;
+}
+
+a.now {
+  position: absolute;
+  top: 3%;
+  left: 36%;
+  width: 32%;
+  color: #ff9b2b;
+  font-family: Monaco, monospace;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: none;
+  text-align: center;
+  padding: 1%;
+  border: thick solid #3939ac;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+div.now2 {
+  display: none;
+}
+
+div.buttonsurgent {
+  width: 100%;
+  margin: auto;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: #7bbbeb;
+}
+
+ul.buttonsurgent {
+  width: 100%;
+  padding: 2%;
+  text-align: center;
+}
+
+li.buttonsurgent {
+  height: 3em;
+  line-height: 2em;
+  display: inline;
+  padding: 1%;
+}
+
+a.volurgent {
+  font-family: American Typewriter, serif;
+  font-size: 1em;
+  text-align: center;
+  color: #990099;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 2%;
+  border: thick solid #990099;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+}
+
+a.lunchurgent {
+  font-family: American Typewriter, serif;
+  font-size: 1em;
+  text-align: center;
+  color: #ff0080;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 2%;
+  border: thick solid #ff0080;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+}
+
+a.amazonurgent {
+  font-family: American Typewriter, serif;
+  font-size: 1em;
+  text-align: center;
+  color: #ff0000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 2%;
+  border: thick solid #ff0000;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+}
+
+div.updates {
+  display: inline;
+  margin: auto;
+  border: 0;
+  width: 95%;
+}
+
+ul.updates {
+  width: 95%;
+  display: inline;
+  padding: 0;
+}
+
+li.updates {
+  width: 100%;
+  margin: auto;
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+  color: black;
+  padding: 1.5%;
+  background-color: #d3e8f8;
+}
+
+p.updates {
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+  color: black;
+  padding: 1.5%;
+  background-color: #d3e8f8;
+}
+
+label.updates {
+  font-size: .7em;
+}
+
+input {
+  border: 1px solid #7bbbeb;
+}
+
+input#updateform {
+  background-color: #ff9b2b;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+/* navigation bar */
+
+div.toplinks {
+  display: inline;
+  margin: 0 auto;
+  border: 0;
+}
+
+ul.toplink {
+  width: 100%;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+li.toplink {
+  background-color: #cc0052;
+  text-align: center;
+}
+
+a.toplinks {
+  display: block;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 0;
+}
+
+a:hover:not(.active) {
+  background-color: gray;
+}
+
+/*end of top*/
+/*beginning of main content styles*/
+
+table.calendar {
+  display: none;
+}
+
+div.buttons1 {
+  display: none;
+}
+
+aside.calendar1 { 
+  float: left;
+  font-family: monospace;
+  font-size: 1.3em;
+  font-weight: bold;
+  background-color: white;
+  padding: 1%;
+}
+
+h1.calendar1 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #e05915;
+  padding: 2%;
+  margin: 0;
+}
+
+ul.calendar {
+}
+
+li.calendar1 {
+  color: black;
+  padding: 1%;
+  list-style-type: disc;
+}
+
+article.news1 {
+  display: none;
+}
+
+article.news { 
+  float: right;
+  font-family: Helvetica, sans-serif;
+  padding: 1%;
+  background-color: #white;
+}
+
+h1.news {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.3em;
+  color: #ffcc00;
+  font-weight: bold;
+  padding: 2%;
+  margin: 0;
+}
+
+li.news {
+  padding: 1%;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.1em;
+  color: black;
+}
+
+a.boldlink {
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+  color: #daa520;
+  text-decoration: none;
+}
+
+article.PTA {
+  float: right;
+  font-family: Verdana, sans-serif;
+  padding: 1%;
+  background-color: white;
+  margin: 0;
+}
+
+h1.PTA {
+  font-family: Verdana, sans-serif;
+  font-size: 1.1em;
+  color: #31af66;
+  font-weight: bold;
+  padding: 2%;
+  margin: 0;
+}
+
+table.PTA {
+  width: 90%;
+  font-family: Verdana, sans-serif;
+  font-size: 1em;
+  color: black; 
+  padding: 3%;
+}
+
+p.PTA {
+  font-family: Verdana, sans-serif;
+  font-size: 1em;
+  color: black;
+  padding: 2%;
+  margin: 0;
+}
+
+article.membership {
+  float: right;
+  font-family: Verdana, sans-serif;
+  padding: 1%;
+  background-color: white;
+  margin: 0; 
+}
+
+h1.membership {
+  font-family: Verdana, sans-serif;
+  font-size: 1.1em;
+  color: #216ac8;
+  font-weight: bold;
+  padding: 2%;
+  margin: 0;
+}
+
+p.membership {
+  font-family: Verdana, sans-serif;
+  font-size: 1em;
+  color: black;
+  padding: 2%;
+}
+
+li.membership {
+  font-family: Verdana, sans-serif;
+  font-size: 1em;
+  color: black;
+  padding: 1%;
+}
+
+article.SLT {
+  float: right;
+  font-family: Helvetica, sans-serif;
+  padding: 2%;
+  margin: 0;
+  background-color: white;
+}
+
+h1.SLT {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #3939ac;
+  padding: 2%;
+  margin: 0;
+}
+
+h2.SLT {
+  color: #737373;
+  font-size: 1.1em;
+  padding: 2%;
+  margin: 0;
+  font-weight: bold;
+}
+
+p.SLT {
+  color: black;
+  font-size: 1.1em;
+  padding: 2%;
+}
+
+a.SLT {
+  font-size: 1.1em;
+  text-decoration: none;
+  color: #daa520;
+}
+
+li.SLT {
+  color: black;
+}
+
+article.CDEC {
+  float: right;
+  font-family: Helvetica, sans-serif;
+  padding: 2%;
+  margin: 0;
+  background-color: white;
+}
+
+h1.CDEC {
+  color: #ff0080;
+  font-size: 1.2em;
+  padding: 2%;
+  margin: 0;
+  font-weight: bold;
+}
+
+p.CDEC {
+  color: black;
+  font-size: 1.1em;
+  padding: 2%;
+}
+
+li.CDEC {
+  color: black;
+  font-size: 1.1em;
+  padding: 1%;
+}
+
+footer {
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+  padding: 2%;
+  font-family: Helvetica, sans-serif;
+  background-color: white;
+}
+
+h2.related {
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #cc33ff;
+}
+
+li.related {
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+a.related {
+  font-size: 1em;
+  text-decoration: none;
+  color: #216ac8;
+}
+
+/* Event Page Styling */
+
+article.events {
+  font-family: Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #c2dde6;
+}
+
+h1.events {
+  font-family: Verdana, sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #431c5d;
+  text-align: center;
+  padding: 2% 0 2% 0;
+}
+
+h2.events {
+  font-family: futura, sans-serif;
+  font-size: 1.1em;
+  text-align: center;
+  font-weight: bold;
+  color: #1b7834;
+  padding: 1%;
+}
+
+p.events1 {
+  font-family: futura, sans-serif;
+  font-size: .9em;
+  color: #dc8239;
+  text-align: center;
+  padding: 2%;
+}
+
+p.events2 {
+  font-family: futura, sans-serif;
+  font-size: 1.1em;
+  color: #dc8239;
+  text-align: center;
+  padding: 2% 0;
+}
+
+a.events {
+  color: #ff383f;
+}
+
+/* Donation Page Styling */
+
+div.auction {
+  width: 95%;
+  float: left;
+  padding: 5%;
+  margin: auto;
+}
+
+h1.donate {
+  font-family: futura, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+p.donate {
+  font-family: futura, sans-serif;
+  font-size: 1em;
+  padding: 2%;
+}
+
+ul.donate {
+  list-style: disc;
+}
+
+li.donate {
+  font-family: futura, sans-serif;
+  font-size: 1em;
+}
+
+div.therm {
+  display: none;
+}
+
+div.buttonssm {
+  width: 100%;
+  margin: auto;
+  padding-top: 10%;
+  margin: auto;
+}
+
+ul.buttonssm {
+  width: 100%;
+  padding: 2%;
+  text-align: center;
+}
+
+li.buttonssm {
+  height: 5em;
+  line-height: 2em;
+  display: inline; 
+}
+
+a.volsm {
+  font-family: American Typewriter, serif;
+  font-size: 1em;
+  text-align: center;
+  color: #990099;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 3%;
+  border: thick solid #990099;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+}
+
+a.lunchsm {
+  font-family: American Typewriter, serif;
+  font-size: 1em;
+  text-align: center;
+  color: #ff0080;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 3%;
+  border: thick solid #ff0080;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+}
+
+a.amazonsm {
+  font-family: American Typewriter, serif;
+  font-size: 1em;
+  text-align: center;
+  color: #ff0000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 3%;
+  border: thick solid #ff0000;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+}
+
+/* Meeting Dates Page Styling */
+
+article.meetingdates {
+  background-color: #a1998e;
+  padding: 1%;
+}
+
+h1.meetingdates {
+  font-family: futura, sans-serif;
+  font-size: 1.1em;
+  color: #a239ca;
+  padding: 1%;
+}
+
+li.meetingdates {
+  font-family: futura, sans-serif;
+  font-size: .9em;
+  color: black;
+  padding: 1%;
+}
+
+/* Notices Page Stylings */
+
+div.notices {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 4%;
+}
+
+h1.notices {
+  font-family: Futura, Arial, sans-serif;
+  font-size: 2em;
+  color: #a62823;
+}
+
+p.notices {
+  font-family: Futura, Arial, sans-serif;
+  font-size: 1.25em;
+}
+
+/* Contacts Page Styling */
+
+article.contacts {
+  background-color: #9cb4e4;
+  padding-bottom: 5%;
+}
+
+h1.contacts {
+  font-family: futura, sans-serif;
+  font-size: 1.1em;
+  color: #216ac8;
+  text-align: center;
+  padding: 3% 1% 1% 1%;
+}
+
+table.contacts {
+  font-family: futura, sans-serif;
+  font-size: .8em;
+  color: #000000;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1%;
+}
+
+tr.odd {
+  background-color: white;
+}
+
+tr.even {
+  background-color:  #bfbfbf;
+}
+
+a.contacts {
+  text-decoration: none;
+  color: #00b300;
+}
+
+div.buttons {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+

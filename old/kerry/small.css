@@ -1,0 +1,215 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+header {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+article, aside {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, section {
+  display: block;
+}
+ol, ul {
+  list-style: none;
+}
+body {
+  line-height: 1.5;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+body {
+	background-color: white;
+	width: 100%;
+	border: 1px; 
+}
+
+div.kerry {
+  display: inline;
+  margin: 0 auto;
+	font-family: Futura, Arial, sans-serif;
+	color: #536a87;
+	font-size: 1.75em;
+	padding: 2%;
+  text-align: center;
+}
+
+div.largelinks {
+  display: none;
+}
+
+ul.largenav {
+  display: none;
+}
+
+li.largenav {
+  display: none;
+}
+
+a.largelink {
+  display: none;
+}
+
+div.large {
+  display: block;
+  margin: 0 auto;
+  padding: 2% 2% 2% 2%;
+  text-align: center;
+}
+
+img.reduced1 {
+  max-width: 90%;
+  display: block;
+  height: auto;
+  margin: 0 auto 2% auto;
+  text-align: center;
+}
+
+img.reduced2 {
+  max-width: 90%;
+  display: block;
+  height: auto;
+  margin: 10% auto 0 auto;
+  text-align: center;
+}
+
+div.links {
+  display: inline;
+  margin: 0 auto;
+}
+
+ul.nav {
+  width: 100%;
+  padding: 0 1% 20% 4%;
+}
+
+li.nav {
+  display: inline;
+  float: left;
+  width: 22%;
+  line-height: 1.5em;
+  height: 2.1em;
+  padding: .5%;
+  border: #536a87 solid thin;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  margin: 1%;
+}
+
+a.link {
+  display: block;
+	text-decoration: none;
+  text-align: center;
+  font-size: .9em;
+	font-family: Futura, Arial, sans-serif;
+  padding: 2%;
+	color: #536a87;
+  
+}
+
+/* Works Page Styling */
+
+div.works {
+  width: 100%;
+  margin: auto 0;
+  text-align: center;
+  padding: 5% 0 35% 0;
+}
+
+h1.works {
+  font-family: Futura, Arial, sans-serif;
+  font-size: 1.5em;
+  color: #536a87;
+}
+
+img.works {
+  width: 75%;
+  height: auto;
+  margin: auto 0;
+  padding-top: 10%;
+}
+
+p.works {
+
+  font-family: Futura, Arial, sans-serif;
+  font-size: 1em;
+  color: #536a87;
+}
+
+a {
+  text-decoration: none;
+  color: ze: 1em;
+  color: #536a87
+}
+
+
+
+
+
+
+
+
+

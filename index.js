@@ -1,14 +1,17 @@
-// thanks Fitorec
-$(document).ready(function(){
-  colors = ['#7f7f92', '#927f7f', '#92927f', '#929292'];
+// thanks dfperry
+$(document).ready(function() {
+  var stopLoop = false;
+  var Loop = null;
   var i = 0;
-  animate_loop = function() {
-     $("html body").animate({ backgroundColor: colors[i++%colors.length] }, 4000, function() {
-      animate_loop();
-                           });
-  }
-  animate_loop();
+  var colors = ["#400080", "#191970", "#420000", "#002700", "#282828"];
+  var colorPicker = 0;
+  Loop = function() {
+    i = i % colors.length + 1;
+    colorPicker = i - 1;
+
+    $("#name-span").animate({ color: colors[colorPicker] }, 1500);
+
+    if (!stopLoop) window.setTimeout(Loop, 1500);
+  };
+  Loop();
 });
-
-
-
