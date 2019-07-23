@@ -4,7 +4,6 @@ html,body,div,span,applet,object,iframe,h1,h3,h4,h5,h6,p,blockquote,pre,a,abbr,a
   margin:0;
   padding:0;
   border:0;
-
   font:inherit;
   vertical-align: baseline;
 }
@@ -12,27 +11,6 @@ html,body,div,span,applet,object,iframe,h1,h3,h4,h5,h6,p,blockquote,pre,a,abbr,a
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
   display:block;
 }
-/*body {
-  line-height:1;
-  animation: pulse 10s infinite;
-}
-@keyframes pulse {
-  0% {
-    background-color: #7f7f92;
-  }
-  25% {
-    background-color: #927f7f;
-  }
-  50% {
-    background-color: #92927f;
-  }
-  75% {
-    background-color: #929292;
-  }
-  100% {
-    background-color: #7f7f92;
-  }
-}*/
 ol,ul {
   list-style:none;
 }
@@ -50,95 +28,99 @@ table {
 body {
   background:#e4e2df;
   box-sizing:border-box;
+  line-height:1;
 }
 .wrapper {
   max-height:1170px;
-  background-color: #fffeea;
+  background-color:#fffeea;
 }
-
 html {
-  font-size: 100%;
+  font-size:100%;
 }
- @media (min-width: 600px) {
-    font-size: calc(112.5% + 4 * (100vw - 600px) / 400)
-} 
-@media (min-width: 1000px) {
-    font-size: calc(137.5%)
+@media (min-width:600px) {
+  font-size:calc(112.5%+4 * (100vw - 600px) / 400)
+}
+@media (min-width:1000px) {
+  font-size: calc(137.5%)
 }
 /* local scrolling doesn't work in safari nor does impact font */
 .header {
-background: url(images/side-eye.jpg);
-background-size: auto 100% cover;
-background-attachment: fixed, local;
-background-position: top;
-background-repeat: no-repeat; 
-height: 300px;
-max-width: 330px;
-margin: 0 auto; 
+  background:url(images/side-eye.jpg);
+  background-size:auto 100% cover;
+  background-attachment:fixed,local;
+  background-position:top;
+  background-repeat:no-repeat;
+  height:300px;
+  max-width:330px;
+  margin:0 auto;
 }
+/*@media (min-width: 700px) {
+  .header {
+    background-position: 50% 30%;
+    height: 400px;
+    max-width: 300px;
+    text-align: center;
+  }
+}*/
 h2 {
-  font-family: impact, sans-serif;
-  font-size: 2.6em;
-  text-align: center;
-  white-space: nowrap;
-  margin: 0;
+  font-family:impact,sans-serif;
+  font-size:2.6em;
+  text-align:center;
+  white-space:nowrap;
+  margin:0;
+  padding-top:2%;
+
 }
+/*@media (min-width: 700px) {
+  h2 {
+    font-size: 6em;
+    position: fixed;
+  }
+}*/
 .light-section {
-  background-color: #fffeea;
-  color: #191970;
-  padding: 1%;
-  max-width: 500px;
-  margin: 0 auto;
+  background-color:#fffeea;
+  color:#191970;
+  padding:1%;
+  max-width:500px;
+  margin:0 auto;
 }
 .dark-section {
-  background-color: #191970;
-  color: #fffeea;
-  padding: 1%;
-  max-width: 500px;
-  margin: 0 auto;
+  background-color:#191970;
+  color:#fffeea;
+  padding:1%;
+  max-width:500px;
+  margin:0 auto;
 }
 p {
   font-family:sans-serif;
   line-height:1.7em;
   padding:1em 1% 1em 1%;
-  
 }
-#voyage {
-  color: #f65026;
-}
-#challenges {
-  color: #f65026;
-}
-
 a {
   font-family:sans-serif;
   color:#f65026;
   text-decoration:none;
 }
 nav {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: black;
-  z-index: 1000;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  align-content: stretch;
+  position:fixed;
+  width:100%;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color:black;
+  z-index:1000;
+  display:-webkit-flex;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:nowrap;
+  align-content:stretch;
 }
 ul {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  padding: 2% 0 2% 0;
+  width:100%;
+  display:flex;
+  justify-content:space-around;
+  padding:2% 0 2% 0;
 }
 li {
   display: inline-block;
 }
-
-/*#f65026 orange#0D5EAF blue#FFCC00 yellowblackredgreenwhite#9f5cc0 purple#Ea36be pink
-
-color:#4285f4;*/
